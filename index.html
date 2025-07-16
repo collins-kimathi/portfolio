@@ -1,955 +1,1109 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
 
 <head>
+    <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>webfolio</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Vue Nuxtjs Template webfolio Multi-Purpose themeforest">
-    <meta name="description" content="webfolio - Multi-Purpose Vue Nuxtjs Template">
-    <meta name="author" content="Uicamp">
-    <link rel="shortcut icon" href="/assets/imgs/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="/assets/css/plugins.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/plugins.js"></script>
-    <script src="/assets/js/TweenMax.min.js"></script>
-    <script src="/assets/js/charming.min.js"></script>
-    <script src="/assets/js/countdown.js"></script>
-    <script src="/assets/js/ScrollTrigger.min.js"></script>
-    <script src="/assets/js/gsap.min.js"></script>
-    <script src="/assets/js/splitting.min.js"></script>
-    <script src="/assets/js/isotope.pkgd.min.js"></script>
-    <script src="/assets/js/imgReveal/imagesloaded.pkgd.min.js"></script>
-    <script src="/assets/js/ScrollSmoother.min.js"></script>
-    <script src="/assets/js/scripts.js" defer></script>
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.OdvjO7iF.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/home-personal.xWMMfldJ.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/vue.f36acd1f.9fTzHtOo.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/loader.eHHXqPnj.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Footer.jz_JYekB.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Navbar.7Sioul4v.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Marq2.jKYZXMEw.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/nuxt-link.RkHyoW2H.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/arrow-down-big.sDPqft-R.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/loadBackgroudImages.z1ewHQoT.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Clients.o5isr-nk.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/c5.oun_jOvk.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/swiper-slide.0PtbgMLJ.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Blog.FaaXqhqs.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/2.G1nVvWoN.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/3.1pC4qAtW.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/Testimonials.5u3CRckm.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/arw0.AInM8VfS.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/5.O8xIpAgV.js">
-    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/2.0hFZk19q.js">
-    <link rel="prefetch" as="script" crossorigin href="/_nuxt/error-404.S0sJjs5o.js">
-    <link rel="prefetch" as="script" crossorigin href="/_nuxt/error-500.DjK76vdY.js">
-    <script type="module" src="/_nuxt/entry.OdvjO7iF.js" crossorigin></script>
-    <script id="unhead:payload" type="application/json">
-        {
-            "title": "webfolio"
-        }
-    </script>
+    <!--[if IE ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
+    <title>Collins Kimathi - Personal Portfolio</title>
+
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animateText.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Font Awesome CDN (latest version as of now) -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Font -->
+    <link rel="stylesheet" href="font/fonts.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.svg">
 </head>
 
-<body class="home-personal">
-    <div id="__nuxt">
-        <!--[-->
-        <!-- <div class="loader-wrap"><svg viewBox="0 0 1000 1000" preserveAspectRatio="none"><path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path></svg>
-            <div class="loader-wrap-heading"><span><h2 class="load-text"><span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span></h2>
-                </span>
-            </div>
-        </div> -->
-        <div class="cursor"></div>
-        <div class="progress-wrap cursor-pointer"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path></svg></div>
-        <div class="lines"><span></span><span></span><span></span><span></span><span></span></div>
-        <nav class="navbar navbar-expand-lg bord blur">
-            <div class="container o-hidden"><a class="logo icon-img-100" href="#"><img src="/assets/imgs/logo-light.png" alt="logo"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="icon-bar"><i class="fas fa-bars"></i></span></button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Demos</span></a>
-                            <div class="dropdown-menu mega-menu">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg"><a class="item-img text-center" href="/home-main"><span class="img"><img src="/assets/imgs/menu/1.png" alt=""></span><span class="mt-15">Main Home</span></a></div>
-                                        <div class="col-lg"><a class="item-img text-center" href="/home-modern-studio"><span class="img"><img src="/assets/imgs/menu/2.png" alt=""></span><span class="mt-15">Modern Studio</span></a></div>
-                                        <div class="col-lg"><a class="item-img text-center" href="/home-creative-agency"><span class="img"><img src="/assets/imgs/menu/3.png" alt=""></span><span class="mt-15">Creative Agency</span></a></div>
-                                        <div class="col-lg"><a class="item-img text-center" href="/home-digital-agency"><span class="img"><img src="/assets/imgs/menu/4.png" alt=""></span><span class="mt-15">Digital Agency</span></a></div>
-                                        <div class="col-lg"><a class="item-img text-center" href="/home-personal"><span class="img"><img src="/assets/imgs/menu/5.png" alt=""></span><span class="mt-15">Freelancer</span></a></div>
-                                    </div>
-                                </div>
+<body>
+    <!-- wrapper -->
+    <div id="wrapper" class="counter-scroll bg_dark">
+
+        <div class="body-overlay d-block">
+            <div class="bg-shape"></div>
+        </div>
+
+        <header class="header header-fixed style-1">
+            <div class="tf-container w-6">
+                <div class="header-sidebar style-1">
+                    <div class="box">
+                        <div class="avatar">
+                            <img src="images/user/avatar-2.webp" width="68" height="68" alt="avatar">
+                        </div>
+                        <div class="info">
+                            <h6 class="font-4 mb_4">ZenG</h6>
+                            <div class="text-label text-uppercase fw-6 text_primary-color font-3  letter-spacing-1">
+                                AI Developer
                             </div>
+                        </div>
+                    </div>
+                    <ul class="nav-menu style-1 lg-hide">
+                        <li class="text-menu text_white">
+                            <a href="#about" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>About</span>
+                                <span class="text" data-splitting>About</span>
+                            </a>
                         </li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Pages</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/page-about"> About Us </a></li>
-                                <li><a class="dropdown-item" href="/page-services"> Services </a></li>
-                                <li><a class="dropdown-item" href="/page-services-details"> Services Details </a></li>
-                                <li><a class="dropdown-item" href="/page-team"> Our Team </a></li>
-                                <li><a class="dropdown-item" href="/page-team-details"> Team Details </a></li>
-                                <li><a class="dropdown-item" href="/page-contact"> Contact Us </a></li>
-                                <li><a class="dropdown-item" href="/page-FAQ"> FAQS </a></li>
-                                <li><a class="dropdown-item" href="/page-404"> Error 404 </a></li>
-                            </ul>
+                        <li class="text-menu text_white">
+                            <a href="#resume" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Resume</span>
+                                <span class="text" data-splitting>Resume</span>
+                            </a>
                         </li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Portfolio</span></a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="/portfolio-gallery"> Gallery </a><a class="dropdown-item" href="/portfolio-creative"> Portfolio Creative </a><a class="dropdown-item" href="/portfolio-creative-carousel"> Creative Carousel </a>
-                                <a
-                                    class="dropdown-item" href="/portfolio-grid"> Portfolio Grid </a><a class="dropdown-item" href="/portfolio-masonry"> Portfolio Masonry </a><a class="dropdown-item" href="/project-details"> Project Details </a></div>
+                        <li class="text-menu text_white">
+                            <a href="#services" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Services</span>
+                                <span class="text" data-splitting>Services</span>
+                            </a>
                         </li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Blogs</span></a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="/blog-classic"> Blog Standerd </a><a class="dropdown-item" href="/blog-grid-sidebar"> Grid With Sidebar </a><a class="dropdown-item" href="/blog-grid-3column"> Grid Three Column </a><a class="dropdown-item"
-                                    href="/blog-details"> Blog Details </a></div>
+                        <li class="text-menu text_white">
+                            <a href="#portfolio" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Portfolio</span>
+                                <span class="text" data-splitting>Portfolio</span>
+                            </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/page-contact"><span class="rolling-text">Contact Us</span></a></li>
+                        <li class="text-menu text_white">
+                            <a href="#pricing" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Pricing</span>
+                                <span class="text" data-splitting>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#contact" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Contact</span>
+                                <span class="text" data-splitting>Contact</span>
+                            </a>
+                        </li>
                     </ul>
+                    <div class="d-flex gap_12 align-items-center">
+                        <a href="#contact" class="tf-btn style-1 animate-hover-btn">
+                            <span>
+                                Hire Me
+                            </span>
+                        </a>
+                        <a class="menu-button show-menu-mobile  d-lg-none link-no-action" data-target="#menu-1" href="#"><i class="icon-CirclesFour"></i></a>
+                    </div>
                 </div>
-                <div class="contact-button"><a href="/page-contact" class="butn butn-sm butn-bg main-colorbg radius-5"><span class="text">Let&#39;s contact</span></a></div>
             </div>
-        </nav>
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-                <main class="main-bg o-hidden">
-                    <div class="header header-personal valign bg-img" data-background="/assets/imgs/header/p0.jpg" data-overlay-dark="2">
-                        <div class="container ontop">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="caption">
-                                        <h6 class="mb-15"><span class="icon-img-30 mr-10"><img src="/assets/imgs/header/hi.png" alt=""></span> Hello! there </h6>
-                                        <h1 class="fw-700 mb-10"> I&#39;m Oliver <span class="main-color">Jackson</span></h1>
-                                        <h3>I am a product designer</h3>
-                                        <div class="row">
-                                            <div class="col-lg-9">
-                                                <div class="text mt-30">
-                                                    <p> From the inception of a project to its completion, we employ a comprehensive and holistic approach. </p>
-                                                </div>
-                                                <div class="d-flex align-items-center mt-60"><a href="/page-contact" class="butn butn-md butn-bord radius-30"><span class="text">Contact Me</span></a>
-                                                    <div class="icon-img-60 ml-20"><img src="/assets/imgs/icon-img/arrow-down-big.png" alt=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info d-flex align-items-center justify-content-end mt-100">
-                                <div class="item">
-                                    <h6 class="sub-title mb-10">Email :</h6><span class="p-color">Webfolio.Info@gmail.com</span></div>
-                                <div class="item">
-                                    <h6 class="sub-title mb-10">Phone :</h6><span class="p-color">+2 456 (343) 24 45</span></div>
-                                <div class="item">
-                                    <h6 class="sub-title mb-10">Address :</h6><span class="p-color">5919 Trussville Pkwy, Birmingham</span></div>
+            <div class="popup-menu-mobile" id="menu-1">
+                <ul class="nav-menu style-3 ">
+                    <li class="text-menu text_white">
+                        <a href="#about" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>About</span>
+                            <span class="text" data-splitting>About</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#resume" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Resume</span>
+                            <span class="text" data-splitting>Resume</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#services" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Services</span>
+                            <span class="text" data-splitting>Services</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#portfolio" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Portfolio</span>
+                            <span class="text" data-splitting>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#pricing" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Pricing</span>
+                            <span class="text" data-splitting>Pricing</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#contact" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Contact</span>
+                            <span class="text" data-splitting>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <header class="header">
+            <div class="tf-container w-6">
+                <div class="header-sidebar style-1">
+                    <div class="box">
+                        <div class="avatar">
+                            <img src="images/user/avatar-2.webp" width="68" height="68" alt="avatar">
+                        </div>
+                        <div class="info">
+                            <h6 class="font-4 mb_4">ZenG</h6>
+                            <div class="text-label text-uppercase fw-6 text_primary-color font-3  letter-spacing-1">
+                                AI Developer
                             </div>
                         </div>
                     </div>
-                    <section class="marq">
-                        <div class="main-marq lrg sub-bg pt-20 pb-20 shadow-off">
-                            <div class="slide-har st1">
-                                <div class="box">
-                                    <!--[-->
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Web Design</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
+                    <ul class="nav-menu style-1 lg-hide">
+                        <li class="text-menu text_white">
+                            <a href="#about" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>About</span>
+                                <span class="text" data-splitting>About</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#resume" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Resume</span>
+                                <span class="text" data-splitting>Resume</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#services" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Services</span>
+                                <span class="text" data-splitting>Services</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#portfolio" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Portfolio</span>
+                                <span class="text" data-splitting>Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#pricing" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Pricing</span>
+                                <span class="text" data-splitting>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="text-menu text_white">
+                            <a href="#contact" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                                <span class="text" data-splitting>Contact</span>
+                                <span class="text" data-splitting>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap_12 align-items-center">
+                        <a href="#contact" class="tf-btn style-1 animate-hover-btn">
+                            <span>
+                                Hire Me
+                            </span>
+                        </a>
+                        <a class="menu-button show-menu-mobile  d-lg-none link-no-action" data-target="#menu-2" href="#"><i class="icon-CirclesFour"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-menu-mobile" id="menu-2">
+                <ul class="nav-menu style-3 ">
+                    <li class="text-menu text_white">
+                        <a href="#about" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>About</span>
+                            <span class="text" data-splitting>About</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#resume" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Resume</span>
+                            <span class="text" data-splitting>Resume</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#services" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Services</span>
+                            <span class="text" data-splitting>Services</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#portfolio" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Portfolio</span>
+                            <span class="text" data-splitting>Portfolio</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#pricing" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Pricing</span>
+                            <span class="text" data-splitting>Pricing</span>
+                        </a>
+                    </li>
+                    <li class="text-menu text_white">
+                        <a href="#contact" class="nav_link toggle splitting link link-no-action text-button font-3 fw-6">
+                            <span class="text" data-splitting>Contact</span>
+                            <span class="text" data-splitting>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-content style-fullwidth section-onepage">
+
+            <div class="tf-container w-6">
+
+                <div class="wrap-section">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="user-bar style-1 text-center">
+                                <div class="box-author mb_12">
+                                    <div class="img-style mb_16">
+                                        <img decoding="async" loading="lazy" src="images/user/avatar.webp" width="314" height="314" alt="feature post">
                                     </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>ArtDirector</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
+                                    <div class="info">
+                                        <div class="name font-2 text_white mb_8">Collins Kimathi</div>
+                                        <div class="text-label text-uppercase fw-6 text_primary-color font-3 mb_16 letter-spacing-1">
+                                            AI Developer
+                                        </div>
+                                        <a href="mailto:themesflat@gmail.com" class="hover-underline-link text_white text-body-2 mb_4">themesflat@gmail.com</a>
+                                        <p class="text-caption-2 text_secondary-color font-3">Based in San Francisco, CA
+                                        </p>
                                     </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Brand Strategy</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>UI/UX Design</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Digital Marketing</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>WebDevelopement</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Seo Mackting</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Product Desgin</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <!--]-->
                                 </div>
-                                <div class="box">
-                                    <!--[-->
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Web Design</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>ArtDirector</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Brand Strategy</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>UI/UX Design</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Digital Marketing</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>WebDevelopement</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Seo Mackting</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <div class="item">
-                                        <h4 class="d-flex align-items-center"><span>Product Desgin</span><span class="icon-img-50 ml-40"><img src="/assets/imgs/star.png" alt=""></span></h4>
-                                    </div>
-                                    <!--]-->
-                                </div>
+                                <ul class="list-icon d-flex justify-content-center">
+                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    <li> <a href=""><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
                             </div>
                         </div>
-                    </section>
-                    <section class="about-author section-padding">
-                        <div class="container with-pad">
-                            <div class="row lg-marg">
-                                <div class="col-lg-5 valign">
-                                    <div class="profile-img">
-                                        <div class="img"><img src="/assets/imgs/header/p2.jpg" alt=""></div><span class="icon"><img src="/assets/imgs/resume/icon1.png" alt=""></span><span class="icon"><img src="/assets/imgs/resume/icon2.png" alt=""></span><span class="icon"><img src="/assets/imgs/resume/icon3.png" alt=""></span>
-                                        <span
-                                            class="icon"><img src="/assets/imgs/resume/icon4.png" alt=""></span>
+                        <div class="col-lg-8">
+                            <!-- section-about -->
+                            <div id="about" class="section-about style-1 section ">
+                                <div class="heading-section mb_45">
+                                    <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_32">
+                                        About
+                                    </div>
+                                    <div class="title-border-shape">
+                                        <h4 class="animationtext clip ">Hello! I'm <span class="tf-text s1 cd-words-wrapper text_primary-color">
+                                                <span class="item-text is-visible">AI Developer</span>
+                                            <span class="item-text is-hidden">Data Scientist</span>
+                                            <span class="item-text is-hidden">UI/UX Developer</span>
+                                            </span>
+                                        </h4>
+                                        <div class="shape">
+                                            <span class="shape-1"></span>
+                                            <span class="shape-2"></span>
+                                            <span class="shape-3"></span>
+                                            <span class="shape-4"></span>
+                                        </div>
+                                        <div class="line">
+                                            <span class="line-horizontal horizontal-1"></span>
+                                            <span class="line-horizontal horizontal-2"></span>
+                                            <span class="line-vertical vertical-1"></span>
+                                            <span class="line-vertical vertical-2"></span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-7 valign">
-                                    <div class="cont">
-                                        <h6 class="sub-title main-color mb-30">About Me</h6>
-                                        <div class="text">
-                                            <h4 class="mb-30"> I&#39;m <span class="fw-200"> Creative Director and UI-UX Designer </span> from Sydney, Australia, working in web development and print media. </h4>
-                                            <p> I enjoy turning complex problems into simple, beautiful and intuitive designs. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-                                                </p>
-                                            <div class="numbers mt-50">
-                                                <div class="row lg-marg">
-                                                    <div class="col-md-6">
-                                                        <div class="item bord-thin-top pt-30 d-flex align-items-end mt-20">
-                                                            <div>
-                                                                <h3 class="fw-300 mb-10">100%</h3>
-                                                                <h6 class="p-color sub-title">Clients Satisfaction</h6>
-                                                            </div>
-                                                            <div class="ml-auto">
-                                                                <div class="icon-img-40"><img src="/assets/imgs/arw0.png" alt=""></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="item bord-thin-top pt-30 d-flex align-items-end mt-20">
-                                                            <div>
-                                                                <h3 class="fw-300 mb-10">6700</h3>
-                                                                <h6 class="p-color sub-title">Projects Completed</h6>
-                                                            </div>
-                                                            <div class="ml-auto">
-                                                                <div class="icon-img-40"><img src="/assets/imgs/arw0.png" alt=""></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <h1 class="title mb_16 split-text effect-blur-fade">
+                                    Empower Code Intelligence
+                                </h1>
+                                <p class="text_muted-color font-3 mb_43 split-text split-lines-transform">Hello! I'm ZenG, an AI Developer with 10 years of experience in designing and developing intelligent systems. My expertise spans machine learning, natural language processing, computer vision, and data analysis. Driven
+                                    by curiosity, I transform complex data into smart solutions."</p>
+                                <div class="wrap-counter tf-grid-layout md-col-3">
+                                    <div class="counter-item bs-light-mode">
+                                        <div class="counter-number h2 text_white mb_7">
+                                            <div class="odometer" data-number="10">1</div>
+                                            <span class="sub">+</span>
+                                        </div>
+                                        <p class="text-body-1 text_muted-color font-3">Years in AI Development</p>
+                                        <div class="item-shape">
+                                            <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                        </div>
+                                    </div>
+                                    <div class="counter-item bs-light-mode">
+                                        <div class="counter-number h2 text_white mb_7">
+                                            <div class="odometer" data-number="500">100</div>
+                                            <span class="sub">+</span>
+                                        </div>
+                                        <p class="text-body-1 text_muted-color font-3">Satisfied Clients</p>
+                                        <div class="item-shape">
+                                            <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                        </div>
+                                    </div>
+                                    <div class="counter-item bs-light-mode">
+                                        <div class="counter-number h2 text_white mb_7">
+                                            <div class="odometer" data-number="1">0</div>
+                                            <span class="sub">k</span>
+                                            <span class="sub">+</span>
+                                        </div>
+                                        <p class="text-body-1 text_muted-color font-3">Projects Completed</p>
+                                        <div class="item-shape">
+                                            <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End section-about -->
+
+                            <!-- section-resume-->
+                            <div id="resume" class="section-resume style-1 pb-0 spacing-4 section">
+                                <div class="heading-section mb_47">
+                                    <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_30">
+                                        Resume
+                                    </div>
+                                    <h3 class="text_white fw-5 split-text effect-blur-fade">Education & Experience</h3>
+                                </div>
+                                <div class="effect-line-hover">
+                                    <div class="wrap-education-item area-effect  scrolling-effect effectTop">
+                                        <span class="point"></span>
+                                        <div class="education-item">
+                                            <div class="content">
+                                                <h5 class="font-4 mb_4"><a href="#contact" class="link">AI Developer</a>
+                                                </h5>
+                                                <span class="text-body-1 font-3">Google Inc.</span>
+                                            </div>
+                                            <div class="date text-caption-1 text_white font-3">
+                                                2020 - Present
+                                            </div>
+                                            <div class="item-shape spotlight">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-education-item area-effect scrolling-effect effectTop">
+                                        <span class="point"></span>
+                                        <div class="education-item">
+                                            <div class="content">
+                                                <h5 class="font-4 mb_4"><a href="#contact" class="link">Machine Learning
+                                                        Engineer</a></h5>
+                                                <span class="text-body-1 font-3">Microsoft Inc.</span>
+                                            </div>
+                                            <div class="date text-caption-1 text_white font-3">
+                                                2018 - 2020
+                                            </div>
+                                            <div class="item-shape spotlight">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-education-item area-effect scrolling-effect effectTop">
+                                        <span class="point"></span>
+                                        <div class="education-item">
+                                            <div class="content">
+                                                <h5 class="font-4 mb_4"><a href="#contact" class="link">Data
+                                                        Scientist</a></h5>
+                                                <span class="text-body-1 font-3">IBM Inc.</span>
+                                            </div>
+                                            <div class="date text-caption-1 text_white font-3">
+                                                2014 - 2018
+                                            </div>
+                                            <div class="item-shape spotlight">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-education-item area-effect scrolling-effect effectTop">
+                                        <span class="point"></span>
+                                        <div class="education-item">
+                                            <div class="content">
+                                                <h5 class="font-4 mb_4"><a href="#contact" class="link">M.Sc. in
+                                                        Computer
+                                                        Science</a></h5>
+                                                <span class="text-body-1 font-3">Stanford University</span>
+                                            </div>
+                                            <div class="date text-caption-1 text_white font-3">
+                                                2013 - 2014
+                                            </div>
+                                            <div class="item-shape spotlight">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-education-item area-effect scrolling-effect effectTop">
+                                        <span class="point"></span>
+                                        <div class="education-item">
+                                            <div class="content">
+                                                <h5 class="font-4 mb_4"><a href="#contact" class="link">B.Sc. in
+                                                        Information
+                                                        Technolog</a></h5>
+                                                <span class="text-body-1 font-3">Massachusetts Institute of
+                                                    Technology</span>
+                                            </div>
+                                            <div class="date text-caption-1 text_white font-3">
+                                                2008 - 2013
+                                            </div>
+                                            <div class="item-shape spotlight">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <!-- End section-resume -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-service -->
+                <div id="services" class="section-service section spacing-5">
+                    <div class="heading-section mb_43">
+                        <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_33">
+                            Services
+                        </div>
+                        <h3 class="text_white fw-5  split-text effect-blur-fade">AI Solutions That Matter</h3>
+                    </div>
+                    <div class="service-item area-effect scrolling-effect effectBottom">
+                        <div class="content-inner d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center content">
+                                <span class="number text-label text_muted-color font-3">01/</span>
+                                <h5 class="text_white font-4"><a href="#contact" class="link">Custom AI Solutions</a>
+                                </h5>
+                            </div>
+                            <a href="#contact" class="btn-arrow"><i class="icon-ArrowRight"></i></a>
+                            <div class="item-shape spotlight">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="work-card section-padding pb-0">
-                        <div class="container">
-                            <div class="sec-head mb-80">
-                                <div class="d-flex align-items-center">
-                                    <div><span class="sub-title main-color mb-5">Our Portfolio</span>
-                                        <h3 class="fw-600 fz-50 text-u d-rotate wow"><span class="rotate-text"> Selected <span class="fw-200">Works.</span></span>
-                                        </h3>
-                                    </div>
-                                    <div class="ml-auto vi-more"><a href="/portfolio-grid" class="butn butn-sm butn-bord radius-30"><span>View All</span></a><span class="icon ti-arrow-top-right"></span></div>
-                                </div>
+                        <div class="img-hover">
+                            <img src="images/item/service-item-1.webp" width="140" height="140" alt="item">
+                        </div>
+
+                    </div>
+                    <div class="service-item area-effect scrolling-effect effectBottom">
+                        <div class="content-inner d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center content">
+                                <span class="number text-label text_muted-color font-3">02/</span>
+                                <h5 class="text_white font-4"><a href="#contact" class="link">Data Analysis &
+                                        Visualization</a>
+                                </h5>
                             </div>
-                            <div class="cards">
-                                <div class="card-item sub-bg">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="cont">
-                                                <div>
-                                                    <div class="mb-15"><a href="/portfolio-grid" class="tag"> Figma </a><a href="/portfolio-grid" class="tag"> Web Design </a></div>
-                                                    <h4>Cutter mobile app</h4>
-                                                </div>
-                                                <div>
-                                                    <p> We’re a full stack firm that can help you from strategy to launch, and anywhere in between. </p><a href="/project-details" class="underline mt-15"><span class="text main-color sub-title"> View Details <i class="ti-arrow-top-right"></i></span></a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img"><img src="/assets/imgs/works/1/1.jpg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-item sub-bg">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="cont">
-                                                <div>
-                                                    <div class="mb-15"><a href="/portfolio-grid" class="tag"> Figma </a><a href="/portfolio-grid" class="tag"> Web Design </a></div>
-                                                    <h4>Cutter mobile app</h4>
-                                                </div>
-                                                <div>
-                                                    <p> We’re a full stack firm that can help you from strategy to launch, and anywhere in between. </p><a href="/project-details" class="underline mt-15"><span class="text main-color sub-title"> View Details <i class="ti-arrow-top-right"></i></span></a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img"><img src="/assets/imgs/works/1/2.jpg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-item sub-bg">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="cont">
-                                                <div>
-                                                    <div class="mb-15"><a href="/portfolio-grid" class="tag"> Figma </a><a href="/portfolio-grid" class="tag"> Web Design </a></div>
-                                                    <h4>Cutter mobile app</h4>
-                                                </div>
-                                                <div>
-                                                    <p> We’re a full stack firm that can help you from strategy to launch, and anywhere in between. </p><a href="/project-details" class="underline mt-15"><span class="text main-color sub-title"> View Details <i class="ti-arrow-top-right"></i></span></a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img"><img src="/assets/imgs/works/1/3.jpg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-item sub-bg">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="cont">
-                                                <div>
-                                                    <div class="mb-15"><a href="/portfolio-grid" class="tag"> Figma </a><a href="/portfolio-grid" class="tag"> Web Design </a></div>
-                                                    <h4>Cutter mobile app</h4>
-                                                </div>
-                                                <div>
-                                                    <p> We’re a full stack firm that can help you from strategy to launch, and anywhere in between. </p><a href="/project-details" class="underline mt-15"><span class="text main-color sub-title"> View Details <i class="ti-arrow-top-right"></i></span></a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img"><img src="/assets/imgs/works/1/4.jpg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-item sub-bg">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <div class="cont">
-                                                <div>
-                                                    <div class="mb-15"><a href="/portfolio-grid" class="tag"> Figma </a><a href="/portfolio-grid" class="tag"> Web Design </a></div>
-                                                    <h4>Cutter mobile app</h4>
-                                                </div>
-                                                <div>
-                                                    <p> We’re a full stack firm that can help you from strategy to launch, and anywhere in between. </p><a href="/project-details" class="underline mt-15"><span class="text main-color sub-title"> View Details <i class="ti-arrow-top-right"></i></span></a></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="img"><img src="/assets/imgs/works/1/5.jpg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <a href="#contact" class="btn-arrow"><i class="icon-ArrowRight"></i></a>
+                            <div class="item-shape spotlight">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                        <div class="sec-bottom mt-100">
-                            <div class="main-bg d-flex align-items-center">
-                                <h6 class="fz-14 fw-400"> More than <span class="fw-600"> 200+ companies</span> trusted us worldwide </h6>
+                        <div class="img-hover">
+                            <img src="images/item/service-item-2.webp" width="140" height="140" alt="item">
+                        </div>
+                    </div>
+                    <div class="service-item area-effect scrolling-effect effectBottom">
+                        <div class="content-inner d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center content">
+                                <span class="number text-label text_muted-color font-3">03/</span>
+                                <h5 class="text_white font-4"><a href="#contact" class="link">Machine Learning
+                                        Automation</a>
+                                </h5>
+                            </div>
+                            <a href="#contact" class="btn-arrow"><i class="icon-ArrowRight"></i></a>
+                            <div class="item-shape spotlight">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="my-skills section-padding">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-10">
-                                    <div class="sec-head text-center mb-80">
-                                        <h3> We&#39;re proud to work with <br>a <span class="opacity-7">diverse range of companies.</span></h3>
-                                    </div>
-                                </div>
+                        <div class="img-hover">
+                            <img src="images/item/service-item-3.webp" width="140" height="140" alt="item">
+                        </div>
+                    </div>
+                    <div class="service-item area-effect scrolling-effect effectBottom">
+                        <div class="content-inner d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center content">
+                                <span class="number text-label text_muted-color font-3">04/</span>
+                                <h5 class="text_white font-4"><a href="#contact" class="link">AI Consulting &
+                                        Training</a></h5>
                             </div>
-                            <div class="row md-marg">
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s1.png" alt=""></div><span class="value">95%</span></div>
-                                        <h6 class="fz-18">UI / UX Design</h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s2.png" alt=""></div><span class="value">90%</span></div>
-                                        <h6 class="fz-18">Development</h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s3.png" alt=""></div><span class="value">85%</span></div>
-                                        <h6 class="fz-18">Graphic Design</h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s5.png" alt=""></div><span class="value">84%</span></div>
-                                        <h6 class="fz-18">Sketch</h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s4.png" alt=""></div><span class="value">78%</span></div>
-                                        <h6 class="fz-18">WordPress</h6>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-6">
-                                    <div class="item mb-30">
-                                        <div class="box-bord">
-                                            <div class="img"><img src="/assets/imgs/resume/s6.png" alt=""></div><span class="value">85%</span></div>
-                                        <h6 class="fz-18">Graphic Design</h6>
-                                    </div>
-                                </div>
+                            <a href="#contact" class="btn-arrow"><i class="icon-ArrowRight"></i></a>
+                            <div class="item-shape spotlight">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="testim-modern section-padding sub-bg bord-top-grd bord-bottom-grd">
-                        <div class="container">
-                            <div class="sec-head mb-80">
-                                <div class="d-flex align-items-center">
-                                    <div><span class="sub-title main-color mb-5">Testimonials</span>
-                                        <h3 class="fw-600 fz-50 text-u d-rotate wow"><span class="rotate-text"> Trusted <span class="fw-200">by Clients.</span></span>
-                                        </h3>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="swiper-arrow-control">
-                                            <div class="swiper-button-prev"><span class="ti-arrow-left"></span></div>
-                                            <div class="swiper-button-next"><span class="ti-arrow-right"></span></div>
-                                        </div>
-                                    </div>
+                        <div class="img-hover">
+                            <img src="images/item/service-item-4.webp" width="140" height="140" alt="item">
+                        </div>
+                    </div>
+                </div>
+                <!-- End section-service -->
+
+                <!-- section-portfolio-->
+                <div id="portfolio" class="section-portfolio style-1 spacing-5 section">
+                    <div class="heading-section mb_42">
+                        <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_34">
+                            Portfolio
+                        </div>
+                        <h3 class="text_white fw-5  split-text effect-blur-fade">Featured Projects</h3>
+                    </div>
+                    <div class="tabs-content-wrap tf-grid-layout md-col-2">
+                        <div class="portfolio-item">
+                            <a href="images/user/portfolio-item-1-1.webp" data-fancybox="gallery" class="img-style">
+                                <img decoding="async" loading="lazy" src="images/user/portfolio-item-1-1.webp"
+                                    srcset="images/user/portfolio-item-1-1.webp 582w"
+                                    sizes="(max-width: 582px) 100vw, 582px" width="582" height="388" alt="portfolio">
+                                <div class="tag font-3 text-label text-uppercase fw-6 letter-spacing-1">
+                                    Conversational AI
                                 </div>
-                            </div>
-                            <div class="testim-swiper3 out-right" data-carousel="swiper" data-loop="true" data-space="30">
-                                <div class="swiper swiper-container" id="content-carousel-container-unq-testim" data-swiper="container">
-                                    <!--[-->
-                                    <!--]-->
-                                    <div class="swiper-wrapper">
-                                        <!--[-->
-                                        <!--]-->
-                                        <!--[-->
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism.” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t1.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t2.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t3.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism.” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t1.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t2.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t3.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism.” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t1.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t2.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="cont">
-                                                    <h6 class="sub-title mb-15">Design Quality</h6>
-                                                    <div class="text">
-                                                        <p> “ I have been hiring people in this space for a number of years and I have never seen this level of professionalism. ” </p>
-                                                    </div>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="d-flex align-items-center">
-                                                        <div>
-                                                            <div class="img fit-img"><img src="/assets/imgs/testim/t3.jpg" alt></div>
-                                                        </div>
-                                                        <div class="ml-20">
-                                                            <h6 class="fz-18">Haitham Al-Dukhin</h6><span class="p-color opacity-8 fz-15 mt-5"> Envato Customer </span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--]-->
-                                        <!--[-->
-                                        <!--]-->
-                                    </div>
-                                    <!---->
-                                    <!---->
-                                    <!---->
-                                    <!--[-->
-                                    <!--]-->
-                                </div>
+                            </a>
+                            <h5 class=" title font-4 text_white"><a href="#" class="link">AI-Powered
+                                    Chatbot</a>
+                            </h5>
+                            <div class="item-shape">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="clients-carso in-circle section-padding">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-10">
-                                    <div class="sec-head text-center mb-80">
-                                        <h3> We&#39;re proud to work with <br> a <span class="opacity-7">diverse range of companies.</span></h3>
-                                    </div>
+                        <div class="portfolio-item">
+                            <a href="images/user/portfolio-item-3-1.webp" data-fancybox="gallery" class="img-style">
+                                <img decoding="async" loading="lazy" src="images/user/portfolio-item-3-1.webp"
+                                    srcset="images/user/portfolio-item-3-1.webp 582w"
+                                    sizes="(max-width: 582px) 100vw, 582px" width="582" height="388" alt="portfolio">
+                                <div class="tag font-3 text-label text-uppercase fw-6 letter-spacing-1">
+                                    Predictive Analytics
                                 </div>
-                            </div>
-                            <div class="swiper5" data-carousel="swiper" data-items="5" data-loop="true" data-space="40">
-                                <div class="swiper swiper-container" id="content-carousel-container-unq-clients" data-swiper="container">
-                                    <!--[-->
-                                    <!--]-->
-                                    <div class="swiper-wrapper">
-                                        <!--[-->
-                                        <!--]-->
-                                        <!--[-->
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c1.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c2.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c3.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c4.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c5.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c1.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c2.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c3.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="3">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c4.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide" data-swiper-slide-index="4">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c5.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c1.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c2.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c3.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c4.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
-                                            <div class="item">
-                                                <div class="img icon-img-100"><img src="/assets/imgs/brands/c5.svg" alt></div>
-                                            </div>
-                                        </div>
-                                        <!--]-->
-                                        <!--[-->
-                                        <!--]-->
-                                    </div>
-                                    <!---->
-                                    <!---->
-                                    <!---->
-                                    <!--[-->
-                                    <!--]-->
-                                </div>
-                            </div>
-                            <div class="sec-bottom mt-100">
-                                <div class="main-bg d-flex align-items-center">
-                                    <h6 class="fz-14 fw-400"> More than <span class="fw-400"> 200+ companies</span> trusted us worldwide </h6>
-                                </div>
+                            </a>
+                            <h5 class=" title font-4 text_white"> <a href="#" class="link">Sales Forecast
+                                    Dashboard</a>
+                            </h5>
+                            <div class="item-shape">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="blog style2">
-                        <div class="container">
-                            <div class="sec-head mb-80">
-                                <div class="d-flex align-items-center">
-                                    <div><span class="sub-title main-color mb-5">Our Blogs</span>
-                                        <h3 class="fw-600 fz-50 text-u d-rotate wow"><span class="rotate-text"> Latest <span class="fw-200">News.</span></span>
-                                        </h3>
-                                    </div>
-                                    <div class="ml-auto vi-more"><a href="/blog-grid-sidebar" class="butn butn-sm butn-bord radius-30"><span>View All</span></a><span class="icon ti-arrow-top-right"></span></div>
+                        <div class="portfolio-item">
+                            <a href="images/user/portfolio-item-2-1.webp" data-fancybox="gallery" class="img-style">
+                                <img decoding="async" loading="lazy" src="images/user/portfolio-item-2-1.webp"
+                                    srcset="images/user/portfolio-item-2-1.webp 582w"
+                                    sizes="(max-width: 582px) 100vw, 582px" width="582" height="388" alt="portfolio">
+                                <div class="tag font-3 text-label text-uppercase fw-6 letter-spacing-1">
+                                    Computer Vision
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="item md-mb50">
-                                        <div class="info sub-title p-color d-flex align-items-center mb-20">
-                                            <div><a href="/blog-grid-sidebar">By : Admin</a></div>
-                                            <div class="ml-30"><a href="/blog-grid-sidebar">August 14, 2023</a></div>
-                                        </div>
-                                        <div class="img fit-img"><img src="/assets/imgs/blog/1.jpg" alt=""></div>
-                                        <div class="cont pt-30">
-                                            <h5>Design Inspiration: Where to Find Creative Ideas</h5><a href="/blog-details" class="butn-crev d-flex align-items-center mt-30"><span class="hover-this"><span class="circle hover-anim"><i class="ti-arrow-top-right"></i></span></span><span class="text">Read more</span></a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="item md-mb50">
-                                        <div class="info sub-title p-color d-flex align-items-center mb-20">
-                                            <div><a href="/blog-grid-sidebar">By : Admin</a></div>
-                                            <div class="ml-30"><a href="/blog-grid-sidebar">August 14, 2023</a></div>
-                                        </div>
-                                        <div class="img fit-img"><img src="/assets/imgs/blog/2.jpg" alt=""></div>
-                                        <div class="cont pt-30">
-                                            <h5>Typography: Choosing Fonts for Maximum Impact</h5><a href="/blog-details" class="butn-crev d-flex align-items-center mt-30"><span class="hover-this"><span class="circle hover-anim"><i class="ti-arrow-top-right"></i></span></span><span class="text">Read more</span></a></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="item">
-                                        <div class="info sub-title p-color d-flex align-items-center mb-20">
-                                            <div><a href="/blog-grid-sidebar">By : Admin</a></div>
-                                            <div class="ml-30"><a href="/blog-grid-sidebar">August 14, 2023</a></div>
-                                        </div>
-                                        <div class="img fit-img"><img src="/assets/imgs/blog/3.jpg" alt=""></div>
-                                        <div class="cont pt-30">
-                                            <h5>Design Inspiration: Where to Find Creative Ideas</h5><a href="/blog-details" class="butn-crev d-flex align-items-center mt-30"><span class="hover-this"><span class="circle hover-anim"><i class="ti-arrow-top-right"></i></span></span><span class="text">Read more</span></a></div>
-                                    </div>
-                                </div>
+                            </a>
+                            <h5 class=" title font-4 text_white"> <a href="#" class="link">Real-Time Object
+                                    Detection</a></h5>
+                            <div class="item-shape">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
-                    </section>
-                    <section class="call-marq section-padding o-hidden" data-v-ccf6853b>
-                        <div class="main-marq lrg sub-bg pt-20 pb-20" data-v-ccf6853b>
-                            <div class="slide-har st1" data-v-ccf6853b>
-                                <div class="box" data-v-ccf6853b>
-                                    <!--[-->
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <!--]-->
-                                    <!--[-->
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Get In Touch</span><span class="icon-img-50 ml-40" data-v-ccf6853b><img src="/assets/imgs/star.png" alt="" data-v-ccf6853b></span></h4>
-                                    </div>
-                                    <!--]-->
-                                </div><a href="/page-contact" class="overlay-link" data-v-ccf6853b></a></div>
-                        </div>
-                        <div class="main-marq bord-item" data-v-ccf6853b>
-                            <div class="slide-har st2" data-v-ccf6853b>
-                                <div class="box" data-v-ccf6853b>
-                                    <!--[-->
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <!--]-->
+                        <div class="portfolio-item">
+                            <a href="images/user/portfolio-item-4-1.webp" data-fancybox="gallery" class="img-style">
+                                <img decoding="async" loading="lazy" src="images/user/portfolio-item-4-1.webp"
+                                    srcset="images/user/portfolio-item-4-1.webp 582w"
+                                    sizes="(max-width: 582px) 100vw, 582px" width="582" height="388" alt="portfolio">
+                                <div class="tag font-3 text-label text-uppercase fw-6 letter-spacing-1">
+                                    Resume Pro
                                 </div>
-                                <div class="box" data-v-ccf6853b>
-                                    <!--[-->
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <div class="item" data-v-ccf6853b>
-                                        <h4 class="d-flex align-items-center" data-v-ccf6853b><span data-v-ccf6853b>Contact Us</span></h4>
-                                    </div>
-                                    <!--]-->
-                                </div><a href="/page-contact" class="overlay-link" data-v-ccf6853b></a></div>
-                        </div>
-                    </section>
-                </main>
-                <footer class="clean-footer crev">
-                    <div class="container pb-40 pt-40 ontop">
-                        <div class="row justify-content-between">
-                            <div class="col-lg-2">
-                                <div class="logo icon-img-100 md-mb80"><img src="/assets/imgs/logo-light.png" alt=""></div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="column md-mb50">
-                                    <h6 class="sub-title mb-30">Contact</h6>
-                                    <h6 class="p-color fw-400"> 5919 Trussville Crossings <br> Pkwy, Birmingham </h6>
-                                    <h6 class="mt-30 mb-15"><a href="#0">Hello@webfolio.com</a></h6><a href="#0" class="underline"><span class="fz-22 main-color">+2 456 (343) 24 45</span></a></div>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="column md-mb50">
-                                    <h6 class="sub-title mb-30">Useful Links</h6>
-                                    <ul class="rest fz-14 opacity-7">
-                                        <li class="mb-15"><a href="/page-about">About</a></li>
-                                        <li class="mb-15"><a href="/page-services">Services</a></li>
-                                        <li class="mb-15"><a href="/blog-grid-sidebar">Blog</a></li>
-                                        <li><a href="/page-contact">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="column subscribe-minimal">
-                                    <h6 class="sub-title mb-30">Newsletter</h6>
-                                    <div class="form-group mb-40"><input type="text" name="subscrib" placeholder="Your Email"><button><span class="ti-location-arrow"></span></button></div>
-                                    <ul class="rest social-icon d-flex align-items-center">
-                                        <li class="hover-this cursor-pointer"><a href="#0" class="hover-anim"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="hover-this cursor-pointer ml-10"><a href="#0" class="hover-anim"><i class="fab fa-dribbble"></i></a></li>
-                                        <li class="hover-this cursor-pointer ml-10"><a href="#0" class="hover-anim"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="hover-this cursor-pointer ml-10"><a href="#0" class="hover-anim"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-30 pb-30 mt-80 bord-thin-top">
-                            <div class="text-center">
-                                <p class="fz-14"> © 2024 Webfolio is Proudly Powered by <span class="underline main-color"><a href="https://themeforest.net/user/UiCamp" target="_blank"> UiCamp </a></span></p>
+                            </a>
+                            <h5 class=" title font-4 text_white"> <a href="#" class="link">Resume ZenG pro</a>
+                            </h5>
+                            <div class="item-shape">
+                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
                             </div>
                         </div>
                     </div>
-                    <div class="circle-blur"><img src="/assets/imgs/patterns/blur1.png" alt=""></div>
-                </footer>
+                </div>
+                <!-- End section-portfolio -->
+
+                <!-- section-testimonial-->
+                <div id="testimonial" class="section-testimonial style-1 section spacing-5 sw-layout">
+                    <div class="heading-section mb_43 d-flex align-items-end justify-content-between">
+                        <div>
+                            <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_30">
+                                testimonials
+                            </div>
+                            <h3 class="text_white fw-5  split-text effect-blur-fade">Trusted By Clients</h3>
+                        </div>
+                        <div class="wrap-sw-button d-flex gap_12 ">
+                            <div class="sw-button nav-prev-layout">
+                                <i class="icon-CaretLeft"></i>
+                            </div>
+                            <div class="sw-button nav-next-layout ">
+                                <i class="icon-CaretRight"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper " data-preview="2" data-destop="2" data-tablet="2" data-mobile="1" data-space-lg="12" data-space-md="12" data-space="12">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-item area-effect">
+                                    <div class="icon">
+                                        <i class="icon-quote"></i>
+                                    </div>
+                                    <p class="text-body-2 text_white mb_21">ZenG delivered exceptional work. He’s professional, fast, and extremely easy to work with. I’d definitely hire him again for future projects!"</p>
+                                    <div class="athor">
+                                        <h5 class="name text_white mb_4 font-4"> <a href="#" class="link">Lincoln
+                                                Press</a>
+                                        </h5>
+                                        <span class="text-label text-uppercase text_primary-color font-3">CEO
+                                            Themesfalt</span>
+                                    </div>
+                                    <div class="item-shape spotlight">
+                                        <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item area-effect">
+                                    <div class="icon">
+                                        <i class="icon-quote"></i>
+                                    </div>
+                                    <p class="text-body-2 text_white mb_21">"ZenG managed our project with impressive efficiency and clarity. Deadlines were met, communication was smooth, and the outcome was exactly what we hoped for."</p>
+                                    <div class="athor">
+                                        <h5 class="name text_white mb_4 font-4"> <a href="#" class="link">Cheyenne
+                                                Mango</a>
+                                        </h5>
+                                        <span class="text-label text-uppercase text_primary-color font-3">CEO
+                                            Themesfalt</span>
+                                    </div>
+                                    <div class="item-shape spotlight">
+                                        <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item area-effect">
+                                    <div class="icon">
+                                        <i class="icon-quote"></i>
+                                    </div>
+                                    <p class="text-body-2 text_white mb_21">"ZenG managed our project with impressive efficiency and clarity. Deadlines were met, communication was smooth, and the outcome was exactly what we hoped for."</p>
+                                    <div class="athor">
+                                        <h5 class="name text_white mb_4 font-4"> <a href="#" class="link">Cheyenne
+                                                Mango</a>
+                                        </h5>
+                                        <span class="text-label text-uppercase text_primary-color font-3">CEO
+                                            Themesfalt</span>
+                                    </div>
+                                    <div class="item-shape spotlight">
+                                        <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End section-testimonial -->
+
+                <!-- section-pricing-->
+                <div id="pricing" class="section-pricing flat-animate-tab spacing-5 section">
+                    <div class="heading-section mb_42">
+                        <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_30">
+                            Pricing
+                        </div>
+                        <h3 class="text_white fw-5  split-text effect-blur-fade">My Pricing</h3>
+                    </div>
+                    <div class="tab-slide  mb_32">
+                        <ul class="menu-tab d-flex align-items-center" role="tablist">
+                            <li class="item-slide-effect"></li>
+                            <li class="nav-tab-item active" role="presentation">
+                                <a href="#standard-plan" class="text-button tab-link fw-6 active font-3" data-bs-toggle="tab">Standard Plan</a>
+                            </li>
+                            <li class="nav-tab-item" role="presentation">
+                                <a href="#premium-plan" class="text-button tab-link fw-6 font-3" data-bs-toggle="tab">Premium
+                                    Plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="standard-plan" role="tabpanel">
+                            <div class="pricing-item style-1 bs-light-mode area-effect">
+                                <h4 class="title">Standard <br> Plan
+                                </h4>
+                                <ul class="list-check d-grid gap_8">
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>60 keywords</li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>6,000 monthly website visitors</li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>8 blogs / month
+                                    </li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>10 quality backlinks / month</li>
+                                </ul>
+                                <div class="wrap-pricing">
+                                    <h3 class="text_white d-flex align-items-center gap_4 mb_20">$29 <span class="text-caption-1 text-caption-1 text_muted-color">/per
+                                            hour</span>
+                                    </h3>
+                                    <a href="#contact" class="tf-btn style-1 animate-hover-btn">
+                                        <span>
+                                            Get Started !
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item-shape spotlight">
+                                    <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="premium-plan" role="tabpanel">
+                            <div class="pricing-item style-1 bs-light-mode area-effect">
+                                <h4 class="title">Premium Plan
+                                </h4>
+                                <ul class="list-check d-grid gap_8">
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>60 keywords</li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>6,000 monthly website visitors</li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>8 blogs / month
+                                    </li>
+                                    <li class="text-body-1 text_white font-3 d-flex align-items-center gap_8"><i class="icon-check"></i>10 quality backlinks / month</li>
+                                </ul>
+                                <div class="wrap-pricing">
+                                    <h3 class="text_white d-flex align-items-center gap_4 mb_20">$39 <span class="text-caption-1 text-caption-1 text_muted-color">/per
+                                            hour</span>
+                                    </h3>
+                                    <a href="#contact" class="tf-btn style-1 animate-hover-btn">
+                                        <span>
+                                            Get Started !
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="item-shape spotlight">
+                                    <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End section-pricing -->
+
+                <!-- section-partner-->
+                <div id="partners" class="section-partner style-2 section spacing-5">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="heading-section">
+                                <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_32">
+                                    Partner
+                                </div>
+                                <h3 class="text_white fw-5  split-text effect-blur-fade">Trusted By 100+ Brands Worldwide
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="swiper tf-sw-partner wrap-partner position-2" data-preview="8" data-tablet="8" data-mobile-sm="6" data-mobile="4" data-space="15" data-space-md="30" data-space-lg="30">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-1 sz-100 scrolling-effect effectZoomIn" data-delay="0.3">
+                                            <img src="images/logo/partner-1.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-2 sz-80">
+                                            <img src="images/logo/partner-3.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-3 sz-80">
+                                            <img src="images/logo/partner-2.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-4 sz-60">
+                                            <img src="images/logo/partner-5.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-5 sz-60">
+                                            <img src="images/logo/partner-8.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-6 sz-100">
+                                            <img src="images/logo/partner-6.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-7 sz-200 scrolling-effect effectZoomIn" data-delay="0.4">
+                                            <img src="images/logo/partner-9.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-8 sz-160 scrolling-effect effectZoomIn" data-delay="0.5">
+                                            <img src="images/logo/partner-4.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-9 sz-120 scrolling-effect effectZoomIn" data-delay="0.6">
+                                            <img src="images/logo/partner-7.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-10 sz-120 scrolling-effect effectZoomIn" data-delay="0.7">
+                                            <img src="images/logo/partner-7.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-11 sz-100">
+                                            <img src="images/logo/partner-6.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="partner-item item-12 sz-80">
+                                            <img src="images/logo/partner-3.png" alt="partner">
+                                            <div class="item-shape">
+                                                <img src="images/item/small-comet.webp" loading="lazy" decoding="async"
+                                                    alt="item">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End section-partner -->
+
+                <!-- section-contact-->
+                <div id="contact" class="section-contact style-1 section spacing-6">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="heading-section mb_44">
+                                <div class="tag-heading text-uppercase text-label font-3 letter-spacing-1 mb_33">
+                                    Contact
+                                </div>
+                                <div class="title mb_40">
+                                    <h3 class="text_white  fw-5 animationtext clip ">Lets <span class="tf-text s1 cd-words-wrapper text_primary-color">
+                                            <span class="item-text is-visible">Design</span>
+                                        <span class="item-text is-hidden">Create</span>
+                                        <span class="item-text is-hidden">Craft</span>
+                                        </span>
+                                        Incredible
+                                    </h3>
+                                    <h3 class="text_white title fw-5 "> Work Together</h3>
+                                </div>
+                                <div class="heading-title">
+                                    <div class="mb_12">
+                                        <h4 class="text_white fw-4 mb_4"><a href="#" class="hover-underline-link link">themesflat@gmail.com</a></h4>
+                                        <p class="text-caption-2 text_secondary-color font-3">Based in San Francisco, CA
+                                        </p>
+                                    </div>
+                                    <ul class="list-icon d-flex">
+                                        <li><a href="#" class="icon-LinkedIn"></a></li>
+                                        <li> <a href="#" class="icon-GitHub"></a></li>
+                                        <li><a href="#" class="icon-X"></a></li>
+                                        <li><a href="#" class="icon-dribbble"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form class="form-contact bs-light-mode">
+                                <div class="d-grid gap_24  mb_24">
+                                    <fieldset class="">
+                                        <input id="name" type="text" placeholder="Your name" name="name" tabindex="2" aria-required="true" required="">
+                                    </fieldset>
+                                    <fieldset class="">
+                                        <input class="" type="email" placeholder="Your email" name="email" tabindex="2" value="" id="email" aria-required="true" required="">
+                                    </fieldset>
+                                    <fieldset>
+                                        <textarea id="message" class="" rows="4" placeholder="Your Message..." tabindex="2" aria-required="true" required=""></textarea>
+                                    </fieldset>
+                                </div>
+
+                                <ul class="list-tag">
+                                    <li><a href="#" class="text_white text-body-1 font-3">
+                                            &lt; $1,000</a>
+                                    </li>
+                                    <li><a href="#" class="text_white text-body-1 font-3">$1,000 - $5,000</a></li>
+                                    <li><a href="#" class="text_white text-body-1 font-3">$5,000 - $10,000</a></li>
+                                    <li><a href="#" class="text_white text-body-1 font-3">$10,000 - 20,000</a></li>
+                                    <li><a href="#" class="text_white text-body-1 font-3">&lt; $20,000</a></li>
+                                </ul>
+
+                                <div class="button-submit">
+                                    <button class="tf-btn style-1 animate-hover-btn" type="submit">
+                                        <span>
+                                            Get Started !
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="item-shape">
+                                    <img src="images/item/small-comet.webp" loading="lazy" decoding="async" alt="item">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p class="font-3 text_secondary-color text-center">© 2025 ZenG. All Rights Reserved.</p>
+                </div>
+                <!-- End section-contact -->
+
+            </div>
+
+            <div class="right-bar style-1 d-flex flex-column align-items-center">
+                <ul class="list-icon menu-option d-flex flex-column gap_8">
+                    <li>
+                        <div class="toggle-switch-mode"><i class="icon-Sun"></i></div>
+                    </li>
+                    <li><a data-bs-toggle="offcanvas" href="#setting-menu" role="button" aria-controls="setting-menu"><i
+                                class="icon-GearSix"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- /wrapper -->
+
+    <div class="overlay-popup"></div>
+
+    <!-- Start tf-setting-color -->
+    <div class="offcanvas offcanvas-bottom popup-setting" id="setting-menu">
+        <div class="close-menu" data-bs-dismiss="offcanvas">
+            <i class="icon icon-times-solid"></i>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="mb-body">
+                <div class="inner">
+                    <div class="setting-color-option">
+                        <div class="wrap-features">
+                            <div class="feature-color tf-setting-color ">
+                                <h5 class="font-4 mb_29">Color</h5>
+                                <div class="settings-color list-choose"><a href="#;" class="choose-item link-no-action active"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                    <a href="#;" class="choose-item link-no-action"></a>
+                                </div>
+                            </div>
+                            <span class="line"></span>
+                            <div class="features-background ">
+                                <h5 class="font-4 mb_19">Background</h5>
+                                <div class="d-flex flex-wrap wrap-feature-bg-item">
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-1.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-1.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v1.html" target="_blank" class="text-body-1 text_white font-3">Glowing
+                                            Digital
+                                            Waves</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-2.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-2.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v2.html" target="_blank" class="text-body-1 text_white font-3">Vibrant
+                                            Particle Glow</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-3.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-3.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v3.html" target="_blank" class="text-body-1 text_white font-3">Cyber
+                                            Particle
+                                            Waves</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-4.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-4.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v4.html" target="_blank" class="text-body-1 text_white font-3">Slow-Motion
+                                            Particle Wave</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-7.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-7.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v7.html" target="_blank" class="text-body-1 text_white font-3">Futuristic
+                                            Cyber Matrix</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-5.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-5.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v5.html" target="_blank" class="text-body-1 text_white font-3">Particle
+                                            Wave
+                                            Form</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-6.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-6.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v6.html" target="_blank" class="text-body-1 text_white font-3">Looping
+                                            Particle Animation</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-8.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-8.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v8.html" target="_blank" class="text-body-1 text_white font-3">Seamless
+                                            Particle Glow</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-9.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-9.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v9.html" target="_blank" class="text-body-1 text_white font-3">Digital
+                                            technology</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-11.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-11.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v10.html" target="_blank" class="text-body-1 text_white font-3">Dotted
+                                            waves
+                                            bounce</a>
+                                    </div>
+                                    <div class="feature-bg-item">
+                                        <img src="images/landing/feature-bg-10.webp" width="207" height="76" loading="lazy" decoding="async" srcset="images/landing/feature-bg-10.webp 207w" sizes="(max-width: 207px) 100vw, 207px" alt="feature-bg">
+                                        <a href="home-v11.html" target="_blank" class="text-body-1 text_white font-3">Solid
+                                            Color
+                                            Background</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--]-->
     </div>
-    <script type="application/json" id="__NUXT_DATA__" data-ssr="true">
-        [
-            ["Reactive", 1], {
-                "data": 2,
-                "state": 3,
-                "once": 4,
-                "_errors": 5,
-                "serverRendered": 6,
-                "path": 7
-            }, {}, {},
-            ["Set"], {},
-            true, "/home-personal"
-        ]
-    </script>
-    <script>
-        window.__NUXT__ = {};
-        window.__NUXT__.config = {
-            public: {},
-            app: {
-                baseURL: "/",
-                buildAssetsDir: "/_nuxt/",
-                cdnURL: ""
-            }
-        }
-    </script>
+    <!-- End tf-setting-color -->
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/ScrollSmooth.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/handleGsap.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/textanimation.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+    <!-- /Javascript -->
+
+
+
 </body>
 
 </html>
