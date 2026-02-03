@@ -168,7 +168,7 @@ Contributions are welcome! If you'd like to contribute to this project:
 
 Collins Kimathi
 
-- Portfolio: https://github.com/collins-kimathi/portfolio/
+- Portfolio: https://collinskimathi.vercel.app/
 - GitHub: (https://github.com/collins-kimathi)
 - LinkedIn: https://www.linkedin.com/in/collins-murimi-1a178a333/
 - Email: collinskimathi49@gmail.com
