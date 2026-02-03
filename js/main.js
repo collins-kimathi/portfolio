@@ -297,3 +297,22 @@
         handleSidebar();
     });
 })(jQuery);
+
+/* Back to Top Button
+-------------------------------------------------------------------------*/
+const backToTop = () => {
+    const $button = $('<button class="back-to-top"><i class="icon-arrow-up"></i></button>');
+    $('body').append($button);
+
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 300) {
+            $button.addClass('show');
+        } else {
+            $button.removeClass('show');
+        }
+    });
+
+    $button.on('click', function() {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+    });
+};
