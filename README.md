@@ -172,6 +172,7 @@ Collins Kimathi
 - GitHub: (https://github.com/collins-kimathi)
 - LinkedIn: https://www.linkedin.com/in/collins-murimi-1a178a333/
 - Email: collinskimathi49@gmail.com
+- live demo : collinskimathi.netlify.app
 
 
 
