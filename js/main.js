@@ -245,6 +245,7 @@
     const preventDefault = () => {
         $(".link-no-action").on("click", function(e) {
             e.preventDefault();
+            
         });
     };
 
