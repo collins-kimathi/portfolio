@@ -184,4 +184,4 @@ Collins Kimathi
 
 Made with ❤️ by Collins Kimathi
 
-⭐ Star this repo if you find it helpful!
+⭐ Star this repo if you find it helpful.thankyou!
