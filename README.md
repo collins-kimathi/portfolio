@@ -2,8 +2,6 @@
 
 A modern, responsive personal portfolio website showcasing my projects, skills, and professional experience.
 
-
-
 🎯 About
 
 This portfolio website is designed to showcase my work, skills, and experience in web development. It features a clean, modern design with smooth animations and an intuitive user interface.
