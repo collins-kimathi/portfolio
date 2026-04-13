@@ -4385,6 +4385,19 @@ ANIMATION AREA CSS
 }
 .blog-article-hero {
   display: grid;
+  gap: 36px;
+}
+.blog-article-heading {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.blog-article-heading .blog-article-meta,
+.blog-article-heading .blog-article-stats {
+  justify-content: center;
+}
+.blog-article-intro {
+  display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
   gap: 40px;
   align-items: center;
@@ -4463,6 +4476,7 @@ ANIMATION AREA CSS
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  margin-top: 20px;
 }
 .blog-cta-panel {
   display: flex;
@@ -4480,8 +4494,17 @@ ANIMATION AREA CSS
     grid-template-columns: 1fr;
   }
   .blog-article-hero,
+  .blog-article-intro,
   .blog-article-grid {
     grid-template-columns: 1fr;
+  }
+  .blog-article-heading {
+    text-align: left;
+    margin: 0;
+  }
+  .blog-article-heading .blog-article-meta,
+  .blog-article-heading .blog-article-stats {
+    justify-content: flex-start;
   }
   .blog-article-next {
     flex-direction: column;
