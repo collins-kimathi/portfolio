@@ -4296,6 +4296,212 @@ ANIMATION AREA CSS
   gap: 44px;
 }
 
+.blog-hero {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 44px;
+  align-items: center;
+}
+.blog-hero-text {
+  max-width: 58rem;
+  margin-top: 24px;
+}
+.blog-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+.blog-hero-feature .blog-feature-meta {
+  color: var(--Primary);
+  margin-bottom: 18px;
+}
+.blog-hero-feature .title {
+  margin-bottom: 16px;
+}
+.blog-grid {
+  gap: 32px;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(12px);
+}
+.blog-card-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.blog-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.blog-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 28px;
+}
+.blog-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: var(--Primary);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.blog-card h4 {
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.blog-card p {
+  margin-bottom: 24px;
+}
+.blog-card-link {
+  margin-top: auto;
+  color: var(--Text-light);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.blog-card-link i {
+  margin-left: 8px;
+}
+.blog-card:hover .blog-card-link,
+.blog-card:hover h4 {
+  color: var(--Primary);
+}
+.blog-article-page {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.blog-article-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: 40px;
+  align-items: center;
+}
+.blog-article-meta,
+.blog-article-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--Primary);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.blog-article-meta,
+.blog-article-stats,
+.blog-card-meta {
+  margin-bottom: 18px;
+}
+.blog-article-hero p + p,
+.blog-article-section p + p {
+  margin-top: 16px;
+}
+.blog-article-image {
+  overflow: hidden;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+.blog-article-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+.blog-article-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 32px;
+}
+.blog-article-aside,
+.blog-article-content,
+.blog-article-next {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(12px);
+}
+.blog-article-aside {
+  display: grid;
+  gap: 24px;
+  align-self: start;
+}
+.blog-aside-block h5,
+.blog-article-section h4,
+.blog-article-next h4 {
+  margin-bottom: 12px;
+}
+.blog-aside-list {
+  display: grid;
+  gap: 12px;
+}
+.blog-aside-list li {
+  color: var(--Text-light);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.blog-article-content {
+  display: grid;
+  gap: 32px;
+}
+.blog-article-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.blog-cta-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  background: var(--Bg-linear-2);
+}
+@media (max-width: 991px) {
+  .blog-hero {
+    grid-template-columns: 1fr;
+  }
+  .blog-article-hero,
+  .blog-article-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-article-next {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blog-cta-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .blog-card-content,
+  .blog-cta-panel,
+  .blog-article-aside,
+  .blog-article-content,
+  .blog-article-next {
+    padding: 22px;
+  }
+}
+
 @media (min-width: 992px) {
   .section-partner .swiper-slide {
     position: unset;

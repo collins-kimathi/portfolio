@@ -161,9 +161,11 @@
         const $sections = $(".section");
 
         $navLinks.on("click", function(e) {
+            const target = $(this).attr("href");
+            if (!target || !target.startsWith("#")) return;
+
             e.preventDefault();
 
-            const target = $(this).attr("href");
             const $target = $(target);
             if (!$target.length) return;
 
