@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>JS to React: Zero to Hero - Collins Kimathi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/odometer.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animateText.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font/fonts.css">
+    <link rel="stylesheet" type="text/css" href="icons/icomoon/style.css">
+    <link rel="shortcut icon" href="images/logo/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.svg">
+
+</head>
+<body class="blog-detail-page">
+    <div id="wrapper" class="counter-scroll bg_dark">
+        <div class="body-overlay d-block"><div class="bg-shape"></div></div>
+
+        <!-- ─── HEADER ─── -->
+        <header class="header header-fixed style-1">
+            <div class="tf-container w-6">
+                <div class="header-sidebar style-1">
+                    <div class="box">
+                        <div class="avatar"><img src="images/user/image1.jpg" width="68" height="68" alt="avatar"></div>
+                        <div class="info">
+                            <h6 class="font-4 mb_4">Collins Kimathi</h6>
+                            <div class="text-label text-uppercase fw-6 text_primary-color font-3 letter-spacing-1">Web Developer</div>
+                        </div>
+                    </div>
+                    <ul class="nav-menu style-1 lg-hide">
+                        <li class="text-menu text_white"><a href="index.html#about" class="nav_link link text-button font-3 fw-6">About</a></li>
+                        <li class="text-menu text_white"><a href="index.html#portfolio" class="nav_link link text-button font-3 fw-6">Portfolio</a></li>
+                        <li class="text-menu text_white"><a href="blogs.html" class="nav_link active link text-button font-3 fw-6">Blogs</a></li>
+                        <li class="text-menu text_white"><a href="index.html#contact" class="nav_link link text-button font-3 fw-6">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap_12 align-items-center">
+                        <a href="blogs.html" class="tf-btn style-1 animate-hover-btn"><span>Back to Blogs</span></a>
+                        <a class="menu-button show-menu-mobile d-lg-none link-no-action" data-target="#menu-1" href="#"><i class="fas fa-bars-progress"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-menu-mobile" id="menu-1">
+                <ul class="nav-menu style-3">
+                    <li class="text-menu text_white"><a href="index.html#about" class="nav_link link text-button font-3 fw-6">About</a></li>
+                    <li class="text-menu text_white"><a href="index.html#portfolio" class="nav_link link text-button font-3 fw-6">Portfolio</a></li>
+                    <li class="text-menu text_white"><a href="blogs.html" class="nav_link active link text-button font-3 fw-6">Blogs</a></li>
+                    <li class="text-menu text_white"><a href="index.html#contact" class="nav_link link text-button font-3 fw-6">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- ─── MAIN CONTENT ─── -->
+        <div class="main-content style-fullwidth">
+            <div class="tf-container w-6 blog-article-page">
+
+                <!-- HERO -->
+                <section class="journey-hero section spacing-5">
+                    <div class="journey-eyebrow">
+                        <span class="tag hot">Personal Journey</span>
+                        <span class="tag">2024 – 2025</span>
+                        <span class="tag">JavaScript · React</span>
+                    </div>
+
+                    <h1 class="journey-title split-text effect-blur-fade">
+                        From <span class="strike">Zero</span> to Hero:<br>
+                        My honest road from vanilla JS<br>to thinking in <span class="glow-word">React</span>
+                    </h1>
+
+                    <p class="journey-subtitle">
+                        Not a tutorial. Not a polished success story. This is the actual messy, confusing, occasionally rewarding journey of learning JavaScript and then making the leap to React — with every resource that helped me survive it.
+                    </p>
+
+                    <div class="journey-meta-strip">
+                        <div class="meta-item"><i class="fas fa-calendar-days"></i> Published April 2025</div>
+                        <div class="meta-item"><i class="fas fa-clock"></i> 8 min read</div>
+                        <div class="meta-item"><i class="fas fa-layer-group"></i> Learning & Dev</div>
+                        <div class="meta-item"><i class="fas fa-fire"></i> Featured</div>
+                    </div>
+
+                    <!-- Milestone progress bar -->
+                    <div class="milestone-bar">
+                        <div class="milestone-step">
+                            <span class="ms-icon">🤔</span>
+                            <div class="ms-label">What even<br>is JS?</div>
+                        </div>
+                        <div class="milestone-step">
+                            <span class="ms-icon">📖</span>
+                            <div class="ms-label">W3Schools<br>grind</div>
+                        </div>
+                        <div class="milestone-step">
+                            <span class="ms-icon">🎥</span>
+                            <div class="ms-label">YouTube<br>Javascript Mastery</div>
+                        </div>
+                        <div class="milestone-step">
+                            <span class="ms-icon">💥</span>
+                            <div class="ms-label">First real<br>project</div>
+                        </div>
+                        <div class="milestone-step">
+                            <span class="ms-icon">⚛️</span>
+                            <div class="ms-label">React<br>confusion</div>
+                        </div>
+                        <div class="milestone-step">
+                            <span class="ms-icon">🚀</span>
+                            <div class="ms-label">It finally<br>clicked</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BODY: SIDEBAR + CONTENT -->
+                <div class="journey-body">
+
+                    <!-- CHAPTER NAV (sticky sidebar) -->
+                    <aside class="journey-sidebar">
+                        <nav class="chapter-nav">
+                            <div class="chapter-nav-label">Chapters</div>
+                            <a href="#ch1" class="chapter-link"><span class="ch-num">01</span> The beginning</a>
+                            <a href="#ch2" class="chapter-link"><span class="ch-num">02</span> JS foundations</a>
+                            <a href="#ch3" class="chapter-link"><span class="ch-num">03</span> The dark valley</a>
+                            <a href="#ch4" class="chapter-link"><span class="ch-num">04</span> Enter React</a>
+                            <a href="#ch5" class="chapter-link"><span class="ch-num">05</span> The click moment</a>
+                            <a href="#ch6" class="chapter-link"><span class="ch-num">06</span> Resources</a>
+                            <a href="#ch7" class="chapter-link"><span class="ch-num">07</span> What I'd tell myself</a>
+                        </nav>
+                    </aside>
+
+                    <!-- ARTICLE CONTENT -->
+                    <div class="journey-content">
+
+                        <!-- CH1: THE BEGINNING -->
+                        <section class="journey-section" id="ch1">
+                            <h3><span class="section-num">01</span> It started with a button that did nothing</h3>
+                            <p>I remember the exact moment. I had an HTML page, a button, and absolutely no idea how to make it do anything when clicked. Someone told me "just use JavaScript." Cool. What is JavaScript?</p>
+                            <p>That question kicked off one of the best and most frustrating chapters of my life. I had no computer science background, no dev friends nearby, and a laptop that took two minutes to open VS Code. The playing field was not exactly stacked in my favour.</p>
+
+                            <div class="phase-block">
+                                <div class="phase-label">Reality Check</div>
+                                <p>There is no clean starting line when you learn to code. You just pick a thing, start pulling threads, and eventually enough threads are in your hands that something starts to make sense.</p>
+                            </div>
+                        </section>
+
+                        <!-- CH2: JS FOUNDATIONS -->
+                        <section class="journey-section" id="ch2">
+                            <h3><span class="section-num">02</span> Learning JavaScript — the foundation grind</h3>
+                            <p>I started with the basics. Variables. Data types. Conditionals. Loops. Functions. It sounds simple, and in isolation each concept is not that hard. The problem is they never live in isolation. Real code mixes them all together and expects you to keep up.</p>
+
+                            <div class="code-moment">
+                                <div class="code-label">Early Collins — circa Week 2</div>
+<span class="cm">// I was genuinely proud of this</span>
+<br><span class="kw">let</span> name <span class="punc">=</span> <span class="str">"Collins"</span><span class="punc">;</span>
+<br><span class="kw">if</span> <span class="punc">(</span>name <span class="punc">===</span> <span class="str">"Collins"</span><span class="punc">) {</span>
+<br>&nbsp;&nbsp;<span class="fn">console</span><span class="punc">.</span><span class="fn">log</span><span class="punc">(</span><span class="str">"Hello, me!"</span><span class="punc">);</span>
+<br><span class="punc">}</span>
+<br><span class="cm">// It printed. I felt like a wizard.</span>
+                            </div>
+
+                            <p>The DOM was where things started to feel real. Selecting elements, listening for events, changing content dynamically — that was the first time I felt like I was building something rather than just writing text in a file.</p>
+
+                            <ul class="takeaway-list">
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Variables and scope — took two weeks to truly get <code>let</code> vs <code>const</code> vs <code>var</code></li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Array methods — <code>map</code>, <code>filter</code>, <code>reduce</code> felt like dark magic until they didn't</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Async JS — <code>setTimeout</code>, Promises, then <code>async/await</code>. Each one blew my mind</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> DOM manipulation — this was the dopamine hit that kept me going</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Fetch API — first time I pulled live data into a page, I nearly fell off my chair</li>
+                            </ul>
+                        </section>
+
+                        <!-- CH3: DARK VALLEY -->
+                        <section class="journey-section" id="ch3">
+                            <h3><span class="section-num">03</span> The dark valley (everyone goes through this)</h3>
+                            <p>About two months in, I hit a wall. I knew enough to know I did not know enough. Tutorials felt easy but my own projects felt impossible. I would watch a video, nod along, then open a blank file and freeze.</p>
+
+                            <div class="honest-box">
+                                <div class="hb-icon">😬</div>
+                                <p>I spent an entire Saturday trying to build a to-do list from scratch without a tutorial. I gave up at 11pm and watched Netflix instead. The next morning I tried again and finished it by lunch. <strong>That gap between giving up and trying again is where most of the learning actually lives.</strong></p>
+                            </div>
+
+                            <p>The valley is a rite of passage. You are not stuck because you are bad at this. You are stuck because you are transitioning from consumer to creator — from following instructions to writing them. That is genuinely hard and it takes time.</p>
+
+                            <div class="phase-block phase-warn">
+                                <div class="phase-label">⚠️ Tutorial Trap</div>
+                                <p>There is a thing called tutorial hell. You watch tutorial after tutorial and feel productive, but you are not building real intuition. The only way out is to close the video and build something broken on your own. The broken version teaches you more than the tutorial ever could.</p>
+                            </div>
+                        </section>
+
+                        <!-- CH4: ENTER REACT -->
+                        <section class="journey-section" id="ch4">
+                            <h3><span class="section-num">04</span> Entering the React dimension</h3>
+                            <p>I had been hearing about React for months before I tried it. "It is just JavaScript," people said. That is technically true and completely unhelpful as a description. React is JavaScript the way a Formula 1 car is just a vehicle.</p>
+                            <p>The first thing that broke my brain was JSX — writing HTML inside JavaScript. It looked wrong. It felt wrong. My eyes kept rejecting it. But after a few days it started to feel natural, and then one day it felt inevitable.</p>
+
+                            <div class="code-moment">
+                                <div class="code-label">My first React component — Week 1</div>
+<span class="kw">function</span> <span class="fn">MovieCard</span><span class="punc">({ </span>title<span class="punc">, </span>year<span class="punc"> }) {</span>
+<br>&nbsp;&nbsp;<span class="kw">return</span> <span class="punc">(</span>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="punc">&lt;</span><span class="fn">div</span> <span class="fn">className</span><span class="punc">=</span><span class="str">"card"</span><span class="punc">&gt;</span>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="punc">&lt;</span><span class="fn">h2</span><span class="punc">&gt;{</span>title<span class="punc">}&lt;/</span><span class="fn">h2</span><span class="punc">&gt;</span>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="punc">&lt;</span><span class="fn">p</span><span class="punc">&gt;{</span>year<span class="punc">}&lt;/</span><span class="fn">p</span><span class="punc">&gt;</span>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="punc">&lt;/</span><span class="fn">div</span><span class="punc">&gt;</span>
+<br>&nbsp;&nbsp;<span class="punc">);</span>
+<br><span class="punc">}</span>
+<br><span class="cm">// It worked. I stared at it for a full minute.</span>
+                            </div>
+
+                            <p>Props made sense quickly. State took longer. The idea that a component could have its own memory, and that changing that memory would automatically update the UI — that felt like actual magic. Understanding <code>useState</code> was the moment React stopped feeling like a foreign language.</p>
+
+                            <div class="phase-block phase-react">
+                                <div class="phase-label">⚛️ React Concepts — In Order of "Oh So THAT'S What That Means"</div>
+                                <p>Components → JSX → Props → useState → useEffect → component reuse → thinking in components → building Ciniverse and wondering why I ever used vanilla JS for anything bigger than a button.</p>
+                            </div>
+                        </section>
+
+                        <!-- CH5: CLICK MOMENT -->
+                        <section class="journey-section" id="ch5">
+                            <h3><span class="section-num">05</span> The moment it all clicked</h3>
+                            <p>It was not a single dramatic moment. It was more like a slow dawn. One day I was adding a feature to a project and I realised I had not checked a tutorial in two hours. I was just writing code and it was doing what I expected. That quiet confidence is what "it clicked" actually feels like.</p>
+                            <p>Building Ciniverse — my movie app — was the project that consolidated everything. I had to think about state management, component structure, API calls, conditional rendering, and UI polish all at once. The fact that it exists and works is the best proof that the journey was worth it.</p>
+
+                            <div class="phase-block phase-win">
+                                <div class="phase-label">✅ The Real Milestone</div>
+                                <p>You know you have levelled up when you stop looking for tutorials and start looking for documentation. That shift — from needing to be guided to knowing how to find answers — is the actual graduation moment.</p>
+                            </div>
+
+                            <ul class="takeaway-list tl-react">
+                                <li><span class="bullet"><i class="fas fa-atom"></i></span> Component thinking changes how you see every interface, not just ones you build in React</li>
+                                <li><span class="bullet"><i class="fas fa-atom"></i></span> State management is 60% of what makes or breaks a React app</li>
+                                <li><span class="bullet"><i class="fas fa-atom"></i></span> <code>useEffect</code> is powerful and easy to misuse — respect it</li>
+                                <li><span class="bullet"><i class="fas fa-atom"></i></span> The React docs are actually really good. Read them, not just videos</li>
+                                <li><span class="bullet"><i class="fas fa-atom"></i></span> Building real projects is irreplaceable. Tutorials are just the warm-up</li>
+                            </ul>
+                        </section>
+
+                        <!-- CH6: RESOURCES -->
+                        <section class="journey-section" id="ch6">
+                            <h3><span class="section-num">06</span> Every resource that actually helped</h3>
+                            <p>I went through a lot of things that did not help. Here are the things that did — honest ratings included.</p>
+
+                            <div class="resource-grid">
+
+                                <a href="https://www.w3schools.com/js/" target="_blank" rel="noopener" class="resource-card rc-orange">
+                                    <div class="rc-icon"><i class="fas fa-book-open"></i></div>
+                                    <div class="rc-title">W3Schools — JavaScript</div>
+                                    <div class="rc-desc">Where I learned every fundamental concept. Copy-pasting examples until I understood why they worked was my whole strategy.</div>
+                                    <span class="rc-badge"><i class="fas fa-star"></i> Great for fundamentals</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/@javascriptmastery" target="_blank" rel="noopener" class="resource-card rc-blue">
+                                    <div class="rc-icon"><i class="fab fa-youtube"></i></div>
+                                    <div class="rc-title">JavaScript Mastery</div>
+                                    <div class="rc-desc">Adrian's project-based tutorials are the reason I could build real things. His Ciniverse-style projects directly shaped how I approached my own movie app.</div>
+                                    <span class="rc-badge"><i class="fas fa-fire"></i> Top tier for projects</span>
+                                </a>
+
+                                <a href="https://react.dev/" target="_blank" rel="noopener" class="resource-card rc-blue">
+                                    <div class="rc-icon"><i class="fas fa-atom"></i></div>
+                                    <div class="rc-title">React Official Docs</div>
+                                    <div class="rc-desc">The new React docs (react.dev) are interactive, clear, and honest about what is hard. Once you have basics down, this is your best friend.</div>
+                                    <span class="rc-badge"><i class="fas fa-check-circle"></i> Essential reference</span>
+                                </a>
+
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="resource-card rc-purple">
+                                    <div class="rc-icon"><i class="fas fa-globe"></i></div>
+                                    <div class="rc-title">MDN Web Docs</div>
+                                    <div class="rc-desc">The source of truth for how JavaScript actually works. Intimidating at first, invaluable forever. Every professional I know keeps this tabbed.</div>
+                                    <span class="rc-badge"><i class="fas fa-shield-halved"></i> Authoritative reference</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/@NetNinja" target="_blank" rel="noopener" class="resource-card rc-green">
+                                    <div class="rc-icon"><i class="fab fa-youtube"></i></div>
+                                    <div class="rc-title">The Net Ninja</div>
+                                    <div class="rc-desc">Short, focused video series on specific topics. His async JavaScript and React hooks series helped me fill specific gaps without sitting through hours of context.</div>
+                                    <span class="rc-badge"><i class="fas fa-bolt"></i> Great for filling gaps</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/@Fireship" target="_blank" rel="noopener" class="resource-card rc-red">
+                                    <div class="rc-icon"><i class="fab fa-youtube"></i></div>
+                                    <div class="rc-title">Fireship</div>
+                                    <div class="rc-desc">100-second concept explainers that are dense, fast, and somehow entertaining. Perfect for getting an overview before you go deep, or staying current on what is new.</div>
+                                    <span class="rc-badge"><i class="fas fa-gauge-high"></i> Best concept overviews</span>
+                                </a>
+
+                                <a href="https://javascript.info/" target="_blank" rel="noopener" class="resource-card rc-yellow">
+                                    <div class="rc-icon"><i class="fas fa-file-code"></i></div>
+                                    <div class="rc-title">javascript.info</div>
+                                    <div class="rc-desc">A complete, well-structured written guide to JavaScript. It goes deeper than W3Schools on the why behind things. I used this when I needed proper explanations, not just examples.</div>
+                                    <span class="rc-badge"><i class="fas fa-layer-group"></i> Deep dives</span>
+                                </a>
+
+                                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener" class="resource-card rc-green">
+                                    <div class="rc-icon"><i class="fas fa-campground"></i></div>
+                                    <div class="rc-title">freeCodeCamp</div>
+                                    <div class="rc-desc">Structured curriculum with certificates. Their JavaScript Algorithms course has genuinely hard challenges that forced me to think differently. The blog is also excellent.</div>
+                                    <span class="rc-badge"><i class="fas fa-award"></i> Structured learning</span>
+                                </a>
+
+                                <a href="https://www.youtube.com/@TraversyMedia" target="_blank" rel="noopener" class="resource-card rc-orange">
+                                    <div class="rc-icon"><i class="fab fa-youtube"></i></div>
+                                    <div class="rc-title">Traversy Media</div>
+                                    <div class="rc-desc">Brad's crash courses are reliable, clear and cover an enormous range of topics. His Vanilla JS crash course was one of the first full videos I completed. Very beginner-friendly.</div>
+                                    <span class="rc-badge"><i class="fas fa-users"></i> Beginner friendly</span>
+                                </a>
+
+                            </div>
+                        </section>
+
+                        <!-- CH7: ADVICE -->
+                        <section class="journey-section" id="ch7">
+                            <h3><span class="section-num">07</span> What I would tell myself on day one</h3>
+                            <p>If I could go back and leave a note for the version of me who did not know what JavaScript was, here is what it would say.</p>
+
+                            <ul class="takeaway-list">
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Confusion is not a sign you are doing it wrong. It is the sensation of your brain building new structure. Stay in it.</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Build things before you feel ready. The only way to feel ready is to have built things already — it is a paradox you have to cheat your way through.</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Pick one resource at a time. Resource-hopping is just a more productive-feeling version of procrastinating.</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Your first projects will be terrible. Ship them anyway. The habit of finishing matters more than the quality right now.</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> Console.log everything. No shame. Every developer does this. Every single one.</li>
+                                <li><span class="bullet"><i class="fas fa-check"></i></span> React will not make sense until it does. Do not try to force it. Keep building small things and one day the model in your head will snap into place.</li>
+                            </ul>
+
+                            <div class="honest-box honest-box-spaced">
+                                <div class="hb-icon">💛</div>
+                                <p>The journey from zero to feeling competent is not a straight line, and no one finishes it. There is always more to learn. But there is a point where the fear of the blank file goes away and gets replaced by curiosity. Getting to that point is worth everything it costs to get there.</p>
+                            </div>
+                        </section>
+
+                        <!-- NEXT ARTICLE -->
+                        <div class="article-next">
+                            <div>
+                                <div class="next-label">Next Story</div>
+                                <h4>The journey of turning Ciniverse from a neat concept into a polished product experience.</h4>
+                            </div>
+                            <a href="blog-ciniverse.html" class="tf-btn style-1 animate-hover-btn"><span>Read Next</span></a>
+                        </div>
+
+                    </div><!-- /article content -->
+                </div><!-- /journey-body -->
+
+            </div><!-- /tf-container -->
+
+            <div class="right-bar style-1 d-flex flex-column align-items-center">
+                <ul class="list-icon menu-option d-flex flex-column gap_8">
+                    <li><div class="toggle-switch-mode"><i class="fas fa-sun theme-icon"></i></div></li>
+                </ul>
+            </div>
+        </div><!-- /main-content -->
+    </div><!-- /wrapper -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/ScrollSmooth.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/handleGsap.js"></script>
+    <script src="js/splitting.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/textanimation.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+
+    <script>
+        // Active chapter highlight on scroll
+        const sections = document.querySelectorAll('.journey-section');
+        const links = document.querySelectorAll('.chapter-link');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    links.forEach(link => link.classList.remove('is-active'));
+                    const id = entry.target.id;
+                    const active = document.querySelector(`.chapter-link[href="#${id}"]`);
+                    if (active) {
+                        active.classList.add('is-active');
+                    }
+                }
+            });
+        }, { rootMargin: '-20% 0px -60% 0px' });
+
+        sections.forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
